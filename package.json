@@ -1,0 +1,44 @@
+{
+  "name": "@torquedev/shell-react",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/torque-framework/torque-shell-react.git"
+  },
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/createShell.js",
+  "exports": {
+    ".": "./src/createShell.js",
+    "./App": "./src/App.jsx"
+  },
+  "scripts": {
+    "build": "vite build",
+    "prepare": "vite build --config vite.app.config.js",
+    "test": "vitest run",
+    "build:app": "vite build --config vite.app.config.js",
+    "dev:app": "vite --config vite.app.config.js"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@mui/icons-material": "^7.3.9",
+    "@mui/material": "^7.3.9",
+    "@vitejs/plugin-react": "^4",
+    "express": "^4.21",
+    "react": "^19",
+    "react-dom": "^19",
+    "react-router-dom": "^7",
+    "vite": "^6"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6",
+    "@testing-library/react": "^16",
+    "@testing-library/user-event": "^14",
+    "jsdom": "^25",
+    "vitest": "^3"
+  }
+}
